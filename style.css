@@ -1,0 +1,40 @@
+.container {
+  max-width: 1150px;
+  height: 100vh;
+  background-color: purple;
+  text-align: center;
+  padding-top: 50px;
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: white;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+nav .button {
+  border-radius: 4px;
+}
+nav .button span {
+  font-weight: 400;
+}
+
+.content {
+  global: global value;
+  local: local value;
+}
+
+.sidebar {
+  global: global value;
+}/*# sourceMappingURL=style.css.map */

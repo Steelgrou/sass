@@ -1,0 +1,64 @@
+// Combinators ~ + >
+// Nesting  Прописывать в скопках это и есть Нестинг из основ SASS
+// Нельзя 3 раза заходить в один тег или селектор это снизит загрузку 
+
+
+.container {
+    max-width: 1150px;
+    height: 100vh;
+    background-color: purple;
+    text-align: center;
+    padding-top: 50px;
+
+    margin: auto {
+        bottom: 0;
+        top: 0;
+
+    }
+
+    color: white;
+}
+
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+
+    .button {
+        border-radius: 4px;
+
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+
+
+$global-variable: global value;
+
+.content {
+  $local-variable: local value;
+  global: $global-variable;
+  local: $local-variable;
+}
+
+.sidebar {
+  global: $global-variable; 
+
+  // This would fail, because $local-variable isn't in scope:
+//   local: $local-variable;
+}
