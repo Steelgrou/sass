@@ -59,6 +59,5 @@ $global-variable: global value;
 .sidebar {
   global: $global-variable; 
 
-  // This would fail, because $local-variable isn't in scope:
-//   local: $local-variable;
+
 }
